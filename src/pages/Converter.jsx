@@ -16,14 +16,14 @@ const Converter = () => {
   const [emptyField, setEmptyField] = useState();
 
   useEffect(() => { 
-        setLoading(true);
-        getAllCurruncy().then((resp) => { setResponce(resp.data.rates); });
-        setLoading(false);
-        if (responce) {
-            setError(true)
-        } else {
-            setError(false);
-        }
+    setLoading(true);
+    getAllCurruncy().then((resp) => { setResponce(resp.data.rates); });
+    setLoading(false);
+    if (responce) {
+        setError(true)
+    } else {
+        setError(false);
+    }
   }, [])
 
   const inputValue = (e) => {
@@ -62,16 +62,14 @@ const Converter = () => {
         setEmptyField("Input value is 0.");
       }}
   }
-  
-
 
   return (
     <>
       <Nav />
       <br />
         <div className="container">
-        <h5 className="h3">Converter Wizard</h5>
-        <p>Convert Curruncy here... </p>
+        <h5 className="h3">Converter wizard</h5>
+        <p>Convert curruncy here... </p>
         <hr />
         </div>
       <br />

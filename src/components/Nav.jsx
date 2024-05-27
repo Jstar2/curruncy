@@ -9,7 +9,7 @@ function Nav() {
     return (
             <nav className="navbar bg-body-tertiary">
                 <div className="container-fluid">
-                    <h1>Curruncy Converter</h1>
+                    <h1>Curruncy converter</h1>
                     <div className="btn-group">
                         <button type="button" className="btn btn-outline-primary" onClick={homeNav}>Home</button>
                         <button type="button" className="btn btn-outline-primary" onClick={convNav}>Converter</button>

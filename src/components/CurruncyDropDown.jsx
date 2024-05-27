@@ -14,7 +14,7 @@ function CurruncyDropDown({ data , onSelect}) {
             {data && 
                 <Dropdown onSelect={handleSelect}>
                     <Dropdown.Toggle>
-                        {selectedCurrency || 'Select Currency'}
+                        {selectedCurrency || 'Select currency'}
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                         {Object.entries(data).map(([currencyCode]) => (
